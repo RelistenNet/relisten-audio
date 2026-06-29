@@ -1,6 +1,6 @@
 services:
   relisten-audio:
-    image: relisten2.tail09dbf.ts.net:32000/relistennet/relisten-audio:latest
+    image: ghcr.io/relistennet/relisten-audio:latest
     restart: always
     volumes:
       - ./nginx-data:/data/nginx/archive.org:rw 
