@@ -1,4 +1,5 @@
-FROM nginx:alpine
+# Pinned: 1.31.9 fixes the HTTP/2 RCEs CVE-2026-123633 and CVE-2026-123007
+FROM nginx:1.31.9-alpine
 
 # Pick up Alpine security fixes the upstream nginx image hasn't been rebuilt with yet
 RUN apk upgrade --no-cache
